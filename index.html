@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuộc thi AI Game - 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body { background: #f7f9fa; }
+    .hero { background: linear-gradient(90deg, #304ffe 60%, #7c4dff 100%); color: #fff; padding: 60px 0 40px 0;}
+    .hero-title { font-size: 2.5rem; font-weight: bold;}
+    .section-title { font-weight: 600; margin-bottom: 24px;}
+    .register-btn { font-size: 1.2rem; }
+    .countdown { font-size: 2rem; font-weight: bold; margin: 30px 0 10px; letter-spacing: 2px;}
+    .countdown span { display: inline-block; min-width: 60px; }
+    .fadein { opacity: 0; transition: opacity 1s ease-out, transform 1s;}
+    .fadein.visible { opacity: 1; transform: none;}
+    footer { background: #222; color: #ccc; padding: 20px 0;}
+    .form-success { display: none; }
+  </style>
+</head>
+<body>
+  <!-- Header/Hero -->
+  <section class="hero text-center">
+    <div class="container">
+      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/ffffff/external-ai-artificial-intelligence-flaticons-flat-flat-icons-3.png" alt="AI Game Logo" width="80" class="animate__animated animate__fadeInDown">
+      <div class="hero-title mt-3 animate__animated animate__fadeInLeft">
+        Cuộc thi AI Game - 2025
+      </div>
+      <p class="lead mt-3 mb-4 animate__animated animate__fadeInUp">
+        Sân chơi lập trình trí tuệ nhân tạo hấp dẫn dành cho học sinh, sinh viên toàn quốc!
+      </p>
+      <!-- Countdown -->
+      <div class="countdown bg-dark rounded-3 p-3 d-inline-block animate__animated animate__fadeInUp" id="countdown"></div>
+      <a href="#register" class="btn btn-warning register-btn animate__animated animate__zoomIn">Đăng ký ngay</a>
+    </div>
+  </section>
+
+  <!-- Giới thiệu -->
+  <section class="container my-5 fadein" data-fade>
+    <div class="row">
+      <div class="col-lg-7 mb-4">
+        <h2 class="section-title">Giới thiệu sự kiện</h2>
+        <p>
+          "Cuộc thi AI Game - 2025" là sân chơi dành cho những ai đam mê lập trình trí tuệ nhân tạo (AI), nơi bạn sẽ sáng tạo và phát triển các chiến thuật game AI để tranh tài cùng các đội thi khác trên toàn quốc. Đừng bỏ lỡ cơ hội trải nghiệm, học hỏi và nhận những giải thưởng hấp dẫn!
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="section-title">Thông tin chi tiết</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 15/10/2025 - 10/12/2025</li>
+          <li><strong>Địa điểm:</strong> Trực tuyến & Chung kết tại TP. Hồ Chí Minh</li>
+          <li><strong>Đối tượng:</strong> Học sinh, sinh viên toàn quốc</li>
+          <li><strong>Giải thưởng:</strong> Tổng giá trị lên tới 100.000.000 VNĐ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lý do nên tham gia -->
+  <section class="bg-light py-5 fadein" data-fade>
+    <div class="container">
+      <h2 class="section-title text-center">Tại sao bạn nên tham gia?</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <img src="https://img.icons8.com/color/48/000000/brain.png" alt="">
+          <h5>Phát triển tư duy AI</h5>
+          <p>Rèn luyện kỹ năng lập trình, tư duy thuật toán và sáng tạo giải pháp AI thực tế.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://img.icons8.com/color/48/000000/trophy.png" alt="">
+          <h5>Giải thưởng hấp dẫn</h5>
+          <p>Nhận các phần thưởng giá trị, giấy chứng nhận và cơ hội thực tập tại các công ty công nghệ lớn.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://img.icons8.com/color/48/000000/teamwork.png" alt="">
+          <h5>Mở rộng mạng lưới</h5>
+          <p>Kết nối cùng cộng đồng AI Việt Nam, giao lưu với chuyên gia và các bạn cùng đam mê.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lịch trình -->
+  <section class="container my-5 fadein" data-fade>
+    <h2 class="section-title text-center">Lịch trình cuộc thi</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <ul class="timeline list-unstyled">
+          <li><strong>15/10 - 10/11:</strong> Mở đăng ký & tập huấn</li>
+          <li><strong>12/11 - 30/11:</strong> Vòng loại trực tuyến</li>
+          <li><strong>05/12:</strong> Công bố đội vào chung kết</li>
+          <li><strong>10/12:</strong> Chung kết & Trao giải tại TP.HCM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Đăng ký -->
+  <section id="register" class="py-5 bg-primary text-white fadein" data-fade>
+    <div class="container">
+      <h2 class="section-title text-center">Đăng ký tham gia</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <form id="registerForm" autocomplete="off" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Họ và tên trưởng nhóm</label>
+              <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên" required>
+              <div class="invalid-feedback">Vui lòng nhập họ và tên.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email liên hệ</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+              <div class="invalid-feedback">Vui lòng nhập email hợp lệ.</div>
+            </div>
+            <div class="mb-3">
+              <label for="team" class="form-label">Tên đội</label>
+              <input type="text" class="form-control" id="team" placeholder="Tên đội thi" required>
+              <div class="invalid-feedback">Vui lòng nhập tên đội.</div>
+            </div>
+            <div class="mb-3">
+              <label for="members" class="form-label">Thành viên khác</label>
+              <input type="text" class="form-control" id="members" placeholder="Tên các thành viên khác (nếu có)">
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Gửi đăng ký</button>
+          </form>
+          <div class="form-success alert alert-success mt-4 text-center">
+            Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ qua email trong thời gian sớm nhất.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 Cuộc thi AI Game. Mọi thông tin chi tiết, vui lòng liên hệ: <a href="mailto:aigame2025@gmail.com" class="text-warning">aigame2025@gmail.com</a></p>
+      <p>
+        <a href="#register" class="text-secondary">Đăng ký</a> | 
+        <a href="#faq" class="text-secondary">Câu hỏi thường gặp</a>
+      </p>
+    </div>
+  </footer>
+  
+  <script>
+    // Countdown
+    function updateCountdown() {
+      // Đặt ngày bắt đầu sự kiện — có thể đổi sang ngày bạn muốn
+      const eventDate = new Date("2025-10-15T08:00:00+07:00").getTime();
+      const now = new Date().getTime();
+      let dist = eventDate - now;
+
+      if (dist < 0) {
+        document.getElementById('countdown').innerHTML = "Đã bắt đầu!";
+        return;
+      }
+      const days = Math.floor(dist / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((dist % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown').innerHTML =
+        `<span>${days} ngày</span> <span>${hours} giờ</span> <span>${minutes} phút</span> <span>${seconds} giây</span>`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Hiệu ứng xuất hiện khi cuộn (fadein)
+    function onScrollFadeIn() {
+      const fadeEls = document.querySelectorAll('[data-fade]');
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.85) {
+          el.classList.add('visible', 'animate__animated', 'animate__fadeInUp');
+        }
+      });
+    }
+    document.addEventListener('scroll', onScrollFadeIn);
+    window.addEventListener('load', onScrollFadeIn);
+
+    // Form động
+    document.getElementById('registerForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      let form = e.target;
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return false;
+      }
+      // Xử lý gửi dữ liệu tại đây (AJAX hoặc Google Form API nếu muốn)
+      form.style.display = 'none';
+      document.querySelector('.form-success').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
